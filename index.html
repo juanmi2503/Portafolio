@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"  >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/92d137d5f9.js" crossorigin="anonymous"></script>
+    <title>LP Desarrollo web</title>
+
+</head>
+
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>JM</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mi</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">Portafolio</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    
+
+                    <!--iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href="https://www.facebook.com/juanmiguel.lozadas/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/juanmi2503"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/juan-miguel-lozada-16408524b"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Mi nombre es <span>Juan Miguel Lozada</span></h2>
+                <h3>Desarrollador Web Full Stack</h3>
+                <p class="descripcion">En este pequeño espacio encontrarán todo lo relacionado conmigo y mi conocimiento del mundo de la programación</p>
+                <a href="#portafolio">Ir a Portafolio</a>
+
+            </div>
+
+        </div>
+    </section>
+    
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/fotoPersonalC.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola, soy <span>Juan Lozada</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Soy un desarrollador web Venezolano y actualmente vivo en Argentina. Disfruto creando de todo, desde sitios para pequeñas empresas hasta aplicaciones web interactivas enriquecidas. Si usted es una empresa que busca una presencia en la web o un empleador que busca contratar, puede ponerse en contacto conmigo aquí.</p>
+            <a href="file:///C:/Users/juanm/Desktop/Info/CV%20Juan%20Lozada%202.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--SECCION SERVICIOS-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Mis Servicios</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></i></span>
+                <h4>Diseño creativo</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>graphic</li>
+                    <li>Seo</li>
+                </ul>
+                <p>Un diseño bueno y atractivo le ayuda a mantener sus clientes potenciales en su sitio web, ya que es la cara digital de su negocio.</p>  
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>graphic</li>
+                    <li>Seo</li>
+                </ul>
+                <p>Con el conocimiento que obtuve mediante cursos de desarrollo web, puedo llevar a cabo la logica que se necesita para el desarrollo de una pagina con lenguajes como Java y JavaScript.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Completamente Responsive</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>graphic</li>
+                    <li>Seo</li>
+                </ul>
+                <p>Su sitio se mostrará correctamente en cualquier dispositivo, incluidos ordenadores de escritorio, tablet y teléfonos móviles</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Integración de Redes Sociales</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>graphic</li>
+                    <li>Seo</li>
+                </ul>
+                <p>Hay muchas plataformas sociales por ahí, y deberías promocionar tu presencia en ellas en tu sitio web.</p>  
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>SEO</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>graphic</li>
+                    <li>Seo</li>
+                </ul>
+                <p>Optimizaré tu sitio con la busqueda inteligente, estrategia de optimización del motor para generar clientes potenciales.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desempeño</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>graphic</li>
+                    <li>Seo</li>
+                </ul>
+                <p>Mantener a los usuarios es crucial para mejorar las conversiones. Los sitios de alto rendimiento atraen y retienen a los usuarios.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Java</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Html & CSS</p>
+                    <span class="porcentaje">85%</span>
+                </div>
+                <div class="barra">
+                    <div id="java" class="barra-progreso2"></div>
+                </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso3"></div>
+            </div>
+
+        <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Base de Datos</p>
+                    <span class="porcentaje">70%</span>
+                </div>
+                <div class="barra">
+                    <div id="bs" class="barra-progreso4"></div>
+                </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/imagenPortafolio.jpeg" alt=""> <!--aca poner la imagen del portafolio-->
+                <div class="info">
+                    <h4>Mi portafolio </h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyectoEGG.jpg" alt=""> <!--aca poner la imagen del portafolio-->
+                <div class="info">
+                    <h4>Proyecto integrador final EGG</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function confirmacion(){
+            var respuesta = confirm("¿Desea enviar esta información?")
+            if (respuesta == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/juanmiguellozada25@gmail.com" method="POST">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" name="name"placeholder="Direccion de correo" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" name="email" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" name="subject" value="Enviar Mensaje" class="btn-enviar" onclick="return confirmacion()">
+
+                <input type="hidden" name="_next" value="http://localhost:8080">
+            </form>
+        </div>
+    </section>
+
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/juanmiguel.lozadas/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/juanmi2503"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/juan-miguel-lozada-16408524b"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
